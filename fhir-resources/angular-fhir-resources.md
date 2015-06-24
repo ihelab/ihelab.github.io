@@ -4,29 +4,34 @@ This library is used to communicate with the FHIR backend service provided by th
 
 To use the library, import it using `bower`
 
-    bower install ihelab/angular-fhir-resources --save
+```bash
+bower install ihelab/angular-fhir-resources --save
+```
 
 and include it in your app as a dependency
 
-    angular.module('myApp', [
-        // Other dependencies
-        ...
-        'angularFhirResources'
-      ])
-      .config(
-        ...
-      );
-    );
-
+```javascript
+angular.module('myApp', [
+    // Other dependencies
+    ...
+    'angularFhirResources'
+  ])
+  .config(
+    ...
+  );
+);
+```
 
 and configuring the library to use correct API credentials for the backend service.
 
-    angular.module('myApp')
-      .config(function(fhirConfigProvider){
-        ...
-        fhirConfigProvider.setAPICredentials('MY_API_USERNAME', 'MY_API_KEY');
-        fhirConfigProvider.setBackendURL('BACKEND_SERVICE_URL');
-      });
+```javascript
+angular.module('myApp')
+   .config(function(fhirConfigProvider){
+     ...
+     fhirConfigProvider.setAPICredentials('MY_API_USERNAME', 'MY_API_KEY');
+     fhirConfigProvider.setBackendURL('BACKEND_SERVICE_URL');
+   });
+```
 
 You can now access the following FHIR resources by injecting them in appropriate service or controller
 
@@ -42,22 +47,26 @@ You can now access the following FHIR resources by injecting them in appropriate
 
 Recommended is to put API configurations in a angular constant service such as
 
-    angular.module('myApp')
-      .constant('fhirAPI', {
-        // Insert your API credentials here
-        apiUser: 'MY_API_USERNAME',
-        apiKey: 'MY_API_KEY',
-        url: 'BACKEND_SERVICE_URL'
-      });
+```javascript
+angular.module('myApp')
+   .constant('fhirAPI', {
+     // Insert your API credentials here
+     apiUser: 'MY_API_USERNAME',
+     apiKey: 'MY_API_KEY',
+     url: 'BACKEND_SERVICE_URL'
+   });
+```
 
 and inject it in the config
 
-    angular.module('myApp')
-          .config(function(fhirConfigProvider, fhirAPI){
-            ...
-            fhirConfigProvider.setAPICredentials(fhirAPI.apiUser, fhirAPI.apiKey);
-            fhirConfigProvider.setBackendURL(fhirAPI.url);
-          });
+```javascript
+angular.module('myApp')
+       .config(function(fhirConfigProvider, fhirAPI){
+         ...
+         fhirConfigProvider.setAPICredentials(fhirAPI.apiUser, fhirAPI.apiKey);
+         fhirConfigProvider.setBackendURL(fhirAPI.url);
+       });
+```
 
 ## Build & development
 
