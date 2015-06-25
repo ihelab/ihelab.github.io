@@ -11,20 +11,6 @@ bower install ihelab/angular-fhir-resources --save
 and include it in your app as a dependency
 
 ```javascript
-function (test) {
-  var a = test + 1;
-  return a;
-}
-```
-
-~~~javascript
-function (test) {
-  var a = test + 1;
-  return a;
-}
-~~~
-
-```javascript
 angular.module('myApp', [
     // Other dependencies
     ...
@@ -38,14 +24,14 @@ angular.module('myApp', [
 
 and configuring the library to use correct API credentials for the backend service.
 
-```javascript
+~~~javascript
 angular.module('myApp')
    .config(function(fhirConfigProvider){
      ...
      fhirConfigProvider.setAPICredentials('MY_API_USERNAME', 'MY_API_KEY');
      fhirConfigProvider.setBackendURL('BACKEND_SERVICE_URL');
    });
-```
+~~~
 
 You can now access the following FHIR resources by injecting them in appropriate service or controller
 
