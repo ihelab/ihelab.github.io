@@ -1,6 +1,2 @@
-markdown: kramdown
-highlighter: pygments
-
 kramdown:
   input: GFM
-  syntax_highlighter: pygments

@@ -11,6 +11,20 @@ bower install ihelab/angular-fhir-resources --save
 and include it in your app as a dependency
 
 ```javascript
+function (test) {
+  var a = test + 1;
+  return a;
+}
+```
+
+~~~javascript
+function (test) {
+  var a = test + 1;
+  return a;
+}
+~~~
+
+```javascript
 angular.module('myApp', [
     // Other dependencies
     ...
