@@ -1,10 +1,6 @@
 ---
 layout: default
 ---
-<h3 id="welcome">Welcome to the IHE Lab</h3>
-<p>Unam incolunt Belgae, aliam Aquitani, tertiam. Cum sociis natoque penatibus et magnis dis parturient. Ut enim ad minim veniam, quis nostrud exercitation. Gallia est omnis divisa in partes tres, quarum. Quid securi etiam tamquam eu fugiat nulla pariatur.</p>
-<p>Non equidem invideo, miror magis posuere velit aliquet. Etiam habebis sem dicantur magna mollis euismod. Quam diu etiam furor iste tuus nos eludet? Salutantibus vitae elit libero, a pharetra augue. Paullum deliquit, ponderibus modulisque suis ratio utitur.</p>
-<p>Gallia est omnis divisa in partes tres, quarum. Contra legem facit qui id facit quod lex prohibet. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quisque placerat facilisis egestas cillum dolore.</p>
-<p>Quam diu etiam furor iste tuus nos eludet? Morbi fringilla convallis sapien, id pulvinar odio volutpat. Mercedem aut nummos unde unde extricat, amaras. Curabitur blandit tempus ardua ridiculus sed magna. Quid securi etiam tamquam eu fugiat nulla pariatur.</p>
-<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quis aute iure reprehenderit in voluptate velit esse. Quid securi etiam tamquam eu fugiat nulla pariatur. Fictum,  deserunt mollit anim laborum astutumque!</p>
-<p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Quam diu etiam furor iste tuus nos eludet? Me non paenitet nullum festiviorem excogitasse ad hoc. Cras mattis iudicium purus sit amet fermentum. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.</p>
+
+{% capture my_include %}{% include_relative welcome.md %}{% endcapture %}
+{{ my_include | markdownify }}
