@@ -1,10 +1,6 @@
 Live examples
 -----------
 
-### API
+Clinical Applications running with simulated data. [Live example](http://www.example.com)
 
-### FHIR Applications
-
-### MTD Validation tool
-
-
+Medical Device Data Export Interface Validation Tool [Live example](http://www.example.com)
