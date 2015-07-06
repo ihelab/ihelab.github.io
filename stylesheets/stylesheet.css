@@ -159,6 +159,13 @@ nav li.current a {
   -o-animation: heartbeat 1300ms ease 0s infinite normal;
   animation: heartbeat 1300ms ease 0s infinite normal;
 
+  -webkit-animation-play-state: paused;
+  -khtml-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused; 
+
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -168,6 +175,17 @@ nav li.current a {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
+
+#logo_icon:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  -webkit-animation-play-state: running;
+  -khtml-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
 
 a {
   text-decoration: none;
@@ -207,7 +225,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 640px;
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -394,7 +412,7 @@ Full-Width Styles
 #project_title {
   margin: 0;
   color: #fff;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
