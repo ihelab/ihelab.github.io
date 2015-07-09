@@ -62,7 +62,7 @@ The API has been implemented as two separate API-platforms. The first platform (
  >  Related source code respository: [FHIR X-Reference Backend](http://www.example.com).
 
 ### C4: Clinical Applications
-Even though the implementation/evaluation of clinical applications are out-of-scope of the MDI Lab, a small set of proof-of-concept applications have been implemented. The purpose of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. The following functionality is currently supported:
+Even though the implementation/evaluation of clinical applications is out-of-scope of the MDI Lab, a small set of proof-of-concept applications have been implemented. The purpose of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. The following functionality is currently supported:
 
  * Admit/Discharge patients
  * Manage patient/Device association
