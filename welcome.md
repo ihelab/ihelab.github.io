@@ -6,8 +6,7 @@ This site provides public access to all source-code produced by the Medical Devi
 
 # Getting started
 
-  1. Read through the <a href="/architecture">overall architecture</a>. 
-  2. Grab the source-code at <a href="http://www.github.com/ihelab">our github</a>. 
+Read through the <a href="/architecture">overall architecture</a>. 
 
 # Contact
 For general inquiries, please contact info@ihelab.com.
