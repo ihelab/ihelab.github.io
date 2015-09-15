@@ -9,4 +9,4 @@ This site provides public access to all source-code produced by the Medical Devi
 Read through the <a href="/architecture">overall architecture</a>. 
 
 # Contact
-For general inquiries, please contact info@ihelab.com.
+For general inquiries, please contact info@sll-mdilab.net.

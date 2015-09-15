@@ -1,11 +1,11 @@
 # angular-fhir-resources
 
-This library is used to communicate with the FHIR backend service provided by the IHE Lab at the Innovation Centre at Karolinska, Solna.
+This library is used to communicate with the FHIR backend service provided by the SLL MDI Lab at the Innovation Centre at Karolinska, Solna.
 
 To use the library, import it using `bower`
 
 ```bash
-bower install ihelab/angular-fhir-resources --save
+bower install sll-mdilab/angular-fhir-resources --save
 ```
 
 and include it in your app as a dependency
