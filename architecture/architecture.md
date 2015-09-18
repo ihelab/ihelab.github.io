@@ -45,21 +45,21 @@ Description of components
 ### C1: Medical Device Simulator
 In order to simplify testing of other components within the lab, a Medical Device Simulator has been implemented. The application simulates a patient monitoring gateway implementing the IHE DEC DOR actor, including the WCM supplement. 
 
- > Related source code respository: [DOR Driver](http://www.example.com).
+ > Related source code respository: [DOR Driver](https://github.com/sll-mdilab/t5-dor-driver).
 
 ### C2: HL7v2 Endpoint
 This component continuously collects, validates and stores device observation data from all medical device systems within the lab. It implements the IHE DEC DOC actor, including the WCM supplement, in order to achieve this. The component is implemented on top of the Apache Camel integration platform. 
 
- >  Related source code respository: [HL7v2 Endpoint](http://www.example.com).
+ >  Related source code respository: [HL7v2 Endpoint](https://github.com/sll-mdilab/t5-doc).
 
 ### C3: HL7 FHIR Endpoint
 This component exposes [HL7 FHIR DSTU 2 resources](http://www.hl7.org/FHIR/2015Jan/index.html) to clinical applications using a REST-API. Only FHIR-resources relevant to the practical scope of the lab have been implemented (such as "Observation", "Patient Demographics", "Encounter Management" etc.). 
 
 The API has been implemented as two separate API-platforms. The first platform (FHIR RAW Backend) exposes non-modified device observation data. The second platform (FHIR X-reference Backend) exposes device observation data which has been enriched with patient-ID/device-ID association. This backend is also used for managing these associations. 
 
- >  Related source code respository: [FHIR Raw Backend](http://www.example.com).
+ >  Related source code respository: [FHIR Raw Backend](https://github.com/sll-mdilab/t5-fhir-backend).
  
- >  Related source code respository: [FHIR X-Reference Backend](http://www.example.com).
+ >  Related source code respository: [FHIR X-Reference Backend](https://github.com/sll-mdilab/t5-pid-xref-manager).
 
 ### C4: Clinical Applications
 Even though the implementation/evaluation of clinical applications is out-of-scope of the MDI Lab, a small set of proof-of-concept applications have been implemented. The purpose of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. The following functionality is currently supported:
@@ -69,4 +69,6 @@ Even though the implementation/evaluation of clinical applications is out-of-sco
  * Trouble-shooting of other components within the lab
  * Monitoring Live-data
 
->  Related source code respository: [FHIR Webapp](http://www.example.com).
+>  Related source code respository: [T5 Web App](https://github.com/sll-mdilab/t5-web-app)
+
+>  Related source code respository: [T5 Angular FHIR Resources](https://github.com/sll-mdilab/angular-fhir-resources)
