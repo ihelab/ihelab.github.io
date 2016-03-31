@@ -62,7 +62,7 @@ The API has been implemented as a single service. The service exposes both non-m
  >  Related source code respository: [FHIR X-Reference Backend](https://github.com/sll-mdilab/t5-pid-xref-manager).
 
 ### C4: Clinical Applications
-The MDI Lab has developed a small set of web-based proof-of-concept applications. One of the purposes of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. These applications also showcase functionality that may could be possible in future clinical decision support system based on technologies such as FHIR. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. 
+The MDI Lab has developed a small set of web-based proof-of-concept applications. One of the purposes of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. These applications also showcase functionality that may be possible in future clinical decision support system based on technologies such as FHIR. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. 
 
 ### T5 Proof-of-Concept Web Application 
 The following functionality is currently supported:
