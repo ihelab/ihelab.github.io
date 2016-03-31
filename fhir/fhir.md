@@ -37,6 +37,6 @@ A machine readable (XML) FHIR ImplementationGuide-resource along with StructureD
 |Extension|Usage|Description|
 |---|---|---|
 |MDI-Issuer-Extension|MDI-PatientDeviceAssociation|Reference to the Practitioner who is responsible for the association.|
-|MDI-MedicationList-Extension|MDI-Organization|A list of medications in use by the department
+|MDI-MedicationList-Extension|MDI-Organization|A list of medications in use by the department.
 |MDI-ClinicalCategory-Extension|MDI-OrderableDeviceMetric|The clinical category which a parameter belongs to (e. g. respiratory or cardiovascular).
-|MDI-AlarmLimits-Extension|MDI-Order|Alarm limits for an ordered vital sign monitoring.
+|MDI-AlarmLimits-Extension|MDI-Order|Alarm limits for an ordered vital signs monitoring.
