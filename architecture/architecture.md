@@ -53,11 +53,11 @@ This component continuously collects, validates and stores device observation da
  >  Related source code respository: [HL7v2 Endpoint](https://github.com/sll-mdilab/t5-doc).
 
 ### C3: HL7 FHIR Endpoint
-This component exposes [HL7 FHIR DSTU 2 resources](http://www.hl7.org/FHIR/2015Jan/index.html) to clinical applications using a REST-API. Only FHIR-resources relevant to the practical scope of the lab have been implemented (such as "Observation", "Patient Demographics", "Encounter Management" etc.). 
+This component exposes [HL7 FHIR DSTU 2 resources](http://www.hl7.org/FHIR/2015Jan/index.html) to clinical applications using the FHIR REST-API. A number of FHIR-resources relevant to the practical scope of the lab have been implemented (such as "Observation", "Patient", "Encounter" etc.). 
 
-The API has been implemented as two separate API-platforms. The first platform (FHIR RAW Backend) exposes non-modified device observation data. The second platform (FHIR X-reference Backend) exposes device observation data which has been enriched with patient-ID/device-ID association. This backend is also used for managing these associations. 
+ >  Related documentation: [SLL MDI Lab FHIR Implementation Guide](/fhir).
 
- >  Related source code respository: [FHIR Raw Backend](https://github.com/sll-mdilab/t5-fhir-backend).
+The API has been implemented as a single service. The service exposes both non-modified device observation data as well as device observation data which has been enriched with patient-ID/device-ID information according to registered associations. This backend is also used for managing these associations as well as storing and serving a set of other FHIR resources. 
  
  >  Related source code respository: [FHIR X-Reference Backend](https://github.com/sll-mdilab/t5-pid-xref-manager).
 
