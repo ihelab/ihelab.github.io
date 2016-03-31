@@ -57,12 +57,12 @@ This component exposes [HL7 FHIR DSTU 2 resources](http://www.hl7.org/FHIR/2015J
 
  >  Related documentation: [SLL MDI Lab FHIR Implementation Guide](/fhir).
 
-The API has been implemented as a single service. The service exposes both non-modified device observation data as well as device observation data which has been enriched with patient-ID/device-ID information according to registered associations. This backend is also used for managing these associations as well as storing and serving a set of other FHIR resources. 
+The API has been implemented as a single service. Regarding Observation FHIR resources, the service exposes both non-modified Device Observation Data as well as Device Observation Data which has been enriched with patient-ID/device-ID information according to registered associations. This backend is also used for managing these associations. 
  
  >  Related source code respository: [FHIR X-Reference Backend](https://github.com/sll-mdilab/t5-pid-xref-manager).
 
 ### C4: Clinical Applications
-The MDI Lab has developed a small set of web-based proof-of-concept applications. One of the purposes of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. These applications also showcase functionality that may be possible in future clinical decision support system based on technologies such as FHIR. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. 
+The MDI Lab has developed a small set of web-based proof-of-concept applications. One of the purposes of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. These applications also showcase functionality and features that may be possible in future clinical decision support system based on technologies such as FHIR. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. 
 
 ### T5 Proof-of-Concept Web Application 
 The following functionality is currently supported:
@@ -79,9 +79,9 @@ The following functionality is currently supported:
 
  * Live monitoring of vital signs
  * Viewing of vital sign history
- * Insertion of manual vital sign observation
- * Annotation of vital sign data
- * SBAR-based transfer between practitioners
+ * Insertion of manual vital signs observation
+ * Annotation of vital signs data
+ * SBAR-compliant transfer between practitioners
  * Ordering of medications and specific vital sign monitoring
  * Pre-anesthetic assessments
 
