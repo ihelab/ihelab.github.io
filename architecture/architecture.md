@@ -62,7 +62,10 @@ The API has been implemented as a single service. The service exposes both non-m
  >  Related source code respository: [FHIR X-Reference Backend](https://github.com/sll-mdilab/t5-pid-xref-manager).
 
 ### C4: Clinical Applications
-Even though the implementation/evaluation of clinical applications is out-of-scope of the MDI Lab, a small set of proof-of-concept applications have been implemented. The purpose of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. The following functionality is currently supported:
+The MDI Lab has developed a small set of web-based proof-of-concept applications. One of the purposes of these applications is to facilitate administration, troubleshooting and demonstration of the other components within the lab. These applications also showcase functionality that may could be possible in future clinical decision support system based on technologies such as FHIR. Additionally, they serve as best-practice examples of FHIR-enabled browser applications. 
+
+### T5 Proof-of-Concept Web Application 
+The following functionality is currently supported:
 
  * Admit/Discharge patients
  * Manage patient/Device association
@@ -70,5 +73,21 @@ Even though the implementation/evaluation of clinical applications is out-of-sco
  * Monitoring Live-data
 
 >  Related source code respository: [T5 Web App](https://github.com/sll-mdilab/t5-web-app)
+
+### Clinical Decision Support Proof-of-Concept Web Application
+The following functionality is currently supported:
+
+ * Live monitoring of vital signs
+ * Viewing of vital sign history
+ * Insertion of manual vital sign observation
+ * Annotation of vital sign data
+ * SBAR-based transfer between practitioners
+ * Ordering of medications and specific vital sign monitoring
+ * Pre-anesthetic assessments
+
+>  Related source code respository: [CDS Web App](https://github.com/sll-mdilab/cds-web-app)
+
+### AngularJS FHIR Library
+Both of the above applications depend on the following FHIR-communication library for the AngularJS web development framework.
 
 >  Related source code respository: [T5 Angular FHIR Resources](https://github.com/sll-mdilab/angular-fhir-resources)
